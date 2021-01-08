@@ -71,7 +71,7 @@ for item in timetable:
     item[0] = item[0].replace(f"{item[0][0]}-я пара", schedule[f"{item[0][0]}"])
 
 """Запись в файл."""
-with open(f"schedule/Расписание на {date[0]}.txt", "w") as file:
+with open(f"Расписание на {date[0]}.txt", "w") as file:
     for item in timetable:
         for i in range(len(item)):
             if i != len(item)-1:
